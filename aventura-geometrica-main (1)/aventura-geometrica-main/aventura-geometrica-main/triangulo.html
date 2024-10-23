@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Triangulo</title>
+
+</head>
+<body>
+<h1>Triangulo</h1>
+
+<p>O triângulo é uma figura geométrica plana formada por três lados e três ângulos. Ele é considerado um polígono, e sua principal característica é o fato de ter três vértices, que são os pontos onde os lados se encontram. Dependendo das medidas de seus lados e ângulos, os triângulos podem ser classificados de diferentes formas:</p>
+
+<h1>Classificação quanto aos ângulos:</h1>
+<p>1 -<strong>Triângulo Retângulo:</strong> Possui um ângulo reto, ou seja, um ângulo de 90°. O lado oposto ao ângulo reto é chamado de hipotenusa, e os outros dois lados são chamados de catetos.<br>
+    2-<strong>Triângulo Acutângulo:</strong> Todos os ângulos internos são menores que 90°.
+    <br>
+    3-<strong>Triângulo Obtusângulo:</strong> Possui um ângulo maior que 90°, chamado de ângulo obtuso.</p>
+<h1>Propriedades dos triângulos:</h1>
+<ul>
+    <li><strong>A soma dos ângulos internos</strong> de qualquer triângulo é sempre 180°.</li>
+       <li> <strong>O maior lado de um triângulo</strong> está sempre oposto ao maior ângulo.</li>
+        <li><strong>No caso dos triângulos retângulos,</strong> é possível usar o Teorema de Pitágoras para relacionar os comprimentos dos lados, onde a soma dos quadrados dos catetos é igual ao quadrado da hipotenusa.</li>
+</ul>
+<p>Os triângulos são fundamentais em diversas áreas, como engenharia, arquitetura e design, por sua estabilidade estrutural e suas propriedades geométricas simplificadas.</p>
+<h1>Fórmulas:</h1>
+
+        1. Perímetro: P = a + b + c (soma dos lados)
+        <br>
+        2. Área: A = (b × h) / 2 (base × altura)
+        <br>
+        3. Altura: h = (2A) / b
+
+<img src="https://th.bing.com/th/id/OIP.HCuyZWCtC8724ei5KUe_kgHaGR?w=211&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+
+
+<style>
+    body{
+        background:cornflowerblue;
+    }
+    img{
+        display: block;
+        padding-top: 5px;
+    }
+</style>
+<h1>Calculo da área do Triângulo</h1>
+
+
+<form  id="trianguloCalculo">
+<label for="triangulo-base">Espaço para a Base</label>
+<input type="number" id="triangulo-base" name="baixo"
+required>
+<label for="triangulo-altura">Espaço para a Altura</label>
+<input type="number" id="triangulo-altura" name="altura"
+required>
+<br><br>
+<button type="submit">Calcular</button>
+</form>
+<p id="triangulo-resultado"></p>
+<script def src="js/scripts.js"></script>
+
+
+
+</body>
+</html>
