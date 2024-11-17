@@ -1,0 +1,74 @@
+<h1 id="primarytitle">O Hexágono: Uma Figura de Seis Lados</h1>
+
+<p>O hexágono é uma figura geométrica plana que possui seis lados e seis ângulos internos. Ele faz parte da família dos polígonos, que são figuras fechadas formadas por segmentos de reta.</p>
+
+<h1>Tipos de Hexágonos:</h1>
+<ul>
+<li>Regular: Todos os lados e ângulos possuem a mesma medida. É como se fosse um hexágono "perfeito".  </li><br>
+<li>Irregular: Os lados e os ângulos têm medidas diferentes.     </li><br>
+
+
+
+</ul>
+
+<h2>Características Principais</h2>
+<ul>
+<li>Soma dos ângulos internos: Em qualquer hexágono, a soma dos ângulos internos sempre será igual a 720 graus.</li><br>
+<li>Ângulos internos do hexágono regular: Cada ângulo interno de um hexágono regular mede 120 graus.</li><br>
+<li>Diagonais: Um hexágono regular possui 9 diagonais.  </li><br>
+
+</ul>
+<h3>O Hexágono na Natureza e na Vida Diária</h3>
+<p>O hexágono é uma forma muito presente na natureza e em diversas áreas da nossa vida. Alguns exemplos:</p>
+<ul>
+<li>Favos de mel: As abelhas constroem seus favos em forma de hexágonos, pois essa forma otimiza o espaço e a utilização da cera.</li><br>
+<li>Cristais: Muitos cristais apresentam estruturas hexagonais.   </li><br>
+<li>Construções: O hexágono é utilizado em diversas construções, como em pisos, tetos e até mesmo em algumas obras de arte.</li><br>
+<li>Jogos: Jogos como tabuleiros e peças de jogos podem apresentar formas hexagonais.</li><br>
+</ul>
+<h1>Calculando a Área de um Hexágono Regular</h1>
+<h2>Hexágono Regular Dividido em Triângulos Equiláteros:</h2><br>
+<p>Um hexágono regular pode ser dividido em 6 triângulos equiláteros.<br>
+A área do hexágono será 6 vezes a área de um desses triângulos.<br>
+Fórmula:
+
+Área do hexágono = 6 * (lado² * √3) / 4
+Onde:
+lado: Comprimento de um lado do hexágono</p>
+
+
+<form id="HexagonoCalculo">
+    <label for="">Espaço para o Lado</label>
+    <input type="number" id="lado" name="lado"
+    required>
+    <br><br>
+    <button type="submit">Calcular</button>
+    </form>
+    <p id="hexagono-resultado"></p>
+    <script>
+document.getElementById("HexagonoCalculo").addEventListener('submit',function(event) {
+    event.preventDefault();//previne que a página carregue
+const lado=parseFloat(document.getElementById('lado').value);
+
+const area=(6 * lado * lado) / 2;
+document.getElementById('hexagono-resultado').textContent="A area do hexagono regular é : " + area ;
+});
+
+
+
+
+
+    </script>
+    
+
+    <style>
+        body{
+            background:cornflowerblue;
+            font-size: 25px;
+        }
+
+     #primarytitle{
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    </style>
