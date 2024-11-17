@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Círculo</h1>
+
+
+    <p> O círculo é uma figura geométrica plana composta por todos os pontos de um plano que estão a uma distância fixa de um ponto central, chamado de centro. Essa distância constante entre o centro e qualquer ponto da borda do círculo é chamada de raio. Em termos mais simples, o círculo é o contorno ou perímetro de uma área circular, embora, no uso cotidiano, a palavra "círculo" também possa se referir à área interna da forma, que é tecnicamente chamada de disco.Ele é uma forma geométrica bidimensional definida por um conjunto de pontos que estão equidistantes de um ponto central, chamado de centro. Essa distância constante entre o centro e qualquer ponto do círculo é chamada de raio (r). Aqui estão algumas características principais de um círculo:
+<br>
+        Definições relacionadas:
+        <br>
+        Centro: O ponto fixo no meio do círculo.
+        <br>
+        Raio: A distância do centro até qualquer ponto da circunferência (a borda do círculo).
+        <br>
+        Diâmetro: A linha reta que passa pelo centro e conecta dois pontos opostos da circunferência. O diâmetro é o dobro do raio.
+        <br>
+        Circunferência: O comprimento da borda do círculo, ou seja, a distância ao redor dele.
+        <br>
+        
+        
+        </p>
+        <h1>Tipos de Círculos</h1>
+     
+<br>
+        <p>
+            1. Círculo concêntrico: Dois ou mais círculos com o mesmo centro.
+            <br>
+            2. Círculo tangente: Dois ou mais círculos que se tocam em um ponto.
+            <br>
+            3. Círculo secante: Dois ou mais círculos que se cruzam em dois pontos.</p>
+
+
+            <h1>Teoremas:</h1>
+
+           <p> 1. Teorema de Tales: O ângulo inscrito em um semicírculo é reto.
+            <br>
+            2. Teorema de Pitágoras: Relaciona o raio e a corda de um círculo
+           </p>
+           <h1>Aplicações do Círculo:</h1>
+           <p>
+            1. Geometria
+            <br>
+            2. Trigonometria
+            <br>
+            3. Física (movimento circular)
+            <br>
+            4. Engenharia (rodas, engrenagens)
+            <br>
+            5. Arquitetura (construção de edifícios)
+
+
+           </p>
+
+<style>
+body{
+
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    background:cornflowerblue;
+    font-size: 25px;
+}
+
+
+
+</style>
+<br>
+<br>
+<form id="circuloCalculo">
+<label for="raio">Espaço para o Raio</label>
+<input type="number" id="raio" name="raio"
+required>
+<br><br>
+<button type="submit">Calcular</button>
+</form>
+<p id="resultado"></p>
+<script>
+document.getElementById("circuloCalculo").addEventListener('submit',function(event) {
+    event.preventDefault();//previne que a página carregue
+const radius=parseFloat(document.getElementById('raio').value);
+
+const area=3.14 * radius * radius;
+document.getElementById('resultado').textContent="A area do circulo é : " + area ;
+
+});
+
+
+
+</script>
+
+
+
+</form>
+
+
+
+
+
+</body>
+</html>

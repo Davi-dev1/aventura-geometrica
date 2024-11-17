@@ -1,0 +1,88 @@
+<h1 id="primarytitle">O Pentágono: Uma Figura de Cinco Lados     </h1>
+
+<p> <b>O pentágono</b> é uma figura geométrica plana que possui cinco lados e cinco ângulos internos. Ele faz parte da família dos polígonos, que são figuras fechadas formadas por segmentos de reta. </p>
+
+    <img src="img/OIP-removebg-preview.png">
+  
+
+
+<h1>Características Principais:</h1>
+<Ul>
+<li>Número de Lados e Ângulos: Sempre possui 5 lados e 5 ângulos internos.</li><br>
+<Li>Soma dos Ângulos Internos: Independentemente do tipo de pentágono, a soma de seus ângulos internos sempre será igual a 540 graus.</Li><br>
+<H2>Tipos de Pentágonos:</H2>
+<li>Regular: Todos os lados possuem o mesmo comprimento e todos os ângulos internos possuem a mesma medida. É como se fosse um pentágono "perfeito".</li><br>
+<li>Irregular: Os lados e os ângulos podem ter medidas diferentes.</li><br>
+</Ul>
+
+
+<h1>O Pentágono Regular: Uma Beleza Geométrica</h1>
+<ul>
+<p>O pentágono regular é especialmente interessante por suas propriedades simétricas e relações com outros números e figuras geométricas.</p>
+
+<li>Ângulos Internos: Cada ângulo interno de um pentágono regular mede 108 graus.</li><br>
+<li>Diagonal: As diagonais de um pentágono regular dividem a figura em triângulos isósceles.</li><br>
+<li>Relação com o Número de Ouro: O pentágono regular está intimamente ligado ao número de ouro (φ), uma proporção encontrada frequentemente na matemática. O pentágono regular possui uma relação de natureza e considerada esteticamente agradável. Essa relação se manifesta na construção do pentágono e em suas diagonais.</li>
+</ul>
+
+
+<h1>Construção de um Pentágono Regular</h1>
+<p>A construção de um pentágono regular pode ser feita utilizando apenas compasso e régua. Existem diversas técnicas para essa construção, algumas mais complexas que outras.</p>
+
+
+
+<h1> Calcular a Área de um Pentágono Regular   </h1>
+<p>A área de um pentágono regular pode ser calculada de forma relativamente simples, utilizando a seguinte fórmula:</p>
+<p>Área = (perímetro * apótema) / 2</p>
+<h3>Onde:</h3>
+<ul>
+    <li>Perímetro: É a soma de todos os lados do pentágono.</li><br>
+    <li>Apótema: Este é o maior lado do pentágono. Ou seja,  é um segmento de reta que liga o centro do pentágono ao ponto médio de um de seus lados, formando um ângulo de 90 graus com esse lado.  </li>
+</ul>
+
+<form id="PentagonoCalculo">
+    <label for="perimetro">Espaço para o Perímetro</label>
+    <input type="number" id="perimetro" name="perimetro"
+    required>
+    <label for="Apotema">Espaço para o Apótema</label>
+    <input type="number" id="apotema" name="apotema" required>
+    <br><br>
+    <button type="submit">Calcular</button>
+    </form>
+    <p id="pentagono-resultado"></p>
+    <script>
+document.getElementById('PentagonoCalculo').addEventListener('submit',function(event) {
+    event.preventDefault();//previne que a página carregue   
+const lado=parseFloat(document.getElementById('perimetro').value);
+const apotema=parseFloat(document.getElementById('apotema').value);
+
+const area=(5 * lado * apotema) / 2;
+document.getElementById('pentagono-resultado').textContent="A area do pentagono regular é : " + area ;
+});
+
+
+
+    </script>
+    
+
+
+
+<style>
+    body{
+        background:cornflowerblue;
+        font-size: 25px;
+    }
+    img{
+        display: block;
+        height: 205px;
+        border:2px solid black;
+    }
+
+
+#primarytitle{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+</style>

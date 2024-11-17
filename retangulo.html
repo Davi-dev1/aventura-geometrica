@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <h1 id="primarytitle">Retangulo</h1>
+<H1>Retângulo: Definição e Características</H1>
+    
+   <p> Um retângulo é uma figura geométrica plana que faz parte da categoria dos quadriláteros, ou seja, possui quatro lados. A principal característica que define um retângulo é o fato de ter quatro ângulos retos (90 graus), o que significa que seus lados opostos são sempre paralelos e de comprimento igual.
+    
+    Características do Retângulo:
+    Lados opostos iguais: Um retângulo tem dois pares de lados opostos de mesmo comprimento. Os lados mais longos são chamados de comprimento, enquanto os lados mais curtos são chamados de largura.
+    Ângulos retos: Todos os ângulos internos de um retângulo são de 90 graus.
+    Diagonais iguais: As diagonais de um retângulo (linhas que ligam vértices opostos) são de mesmo comprimento e se cruzam no meio.</p>
+
+
+<style>body{
+    background:cornflowerblue;
+    font-size: 25px;
+}
+.uni{
+align-items: center;
+
+}
+#primarytitle{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+    </style>
+
+
+    <h1>Aplicações do Retângulo</h1>
+        <p>Os retângulos são encontrados frequentemente no mundo ao nosso redor. Eles são usados em construções arquitetônicas, no design de janelas, portas, telas de dispositivos eletrônicos, e até em objetos comuns como livros e caixas. Sua simplicidade e simetria tornam o retângulo uma das formas mais utilizadas e estudadas na matemática e nas artes visuais.</p>
+<img  class="uni"   src="https://static.todamateria.com.br/upload/57/7b/577bf3d4dda44-area-do-retangulo.jpg?auto_optimize=low" alt="Ftozin">
+
+<h1>Calculo da àrea do Retangulo</h1>
+
+<form id="retanguloCalculo">
+<label for="retangulo-base">Espaço para a Base</label>
+<input type="number" id="retangulo-base" name="base"
+required>
+<label for="retangulo-altura">Espaço para a Altura</label>
+<input type="number" id="retangulo-altura" name="Altura" required>
+<br><br>
+<button type="submit">Calcular</button>
+</form>
+<p id="retangulo-resultado"></p>
+<script >
+document.getElementById("retanguloCalculo").addEventListener('submit',function(event) {
+      event.preventDefault();//previne que a página carregue
+const width=parseFloat(document.getElementById('retangulo-base').value);
+const height=parseFloat(document.getElementById('retangulo-altura').value);
+
+const area=width * height;
+document.getElementById('retangulo-resultado').textContent="A area do retangulo é : " + area ;
+
+});
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
